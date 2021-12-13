@@ -1,60 +1,63 @@
 import 'package:chat_date_separator/model/chat.dart';
 
+// set current date & time
 final now = DateTime.now();
+
+// Dummy data: List of Chats
 List<Chat> dummyChats = [
   Chat(
-    created: now,
-    text: 'Text1',
-    textUser: 'userA',
+    createdAt: now,
+    text: 'Text1Text1Text1Text1',
+    sender: 'userA',
   ),
   Chat(
-    created: now,
-    text: 'Text2',
-    textUser: 'userA',
+    createdAt: now,
+    text: 'Text2Text2Text2Text2',
+    sender: 'userA',
   ),
   Chat(
-    created: now.add(Duration(minutes: 1)),
-    text: 'Text3',
-    textUser: 'userB',
+    createdAt: now.add(Duration(minutes: 1)),
+    text: 'Text3Text3Text3Text3',
+    sender: 'userB',
   ),
   Chat(
-    created: now.add(Duration(minutes: 1)),
+    createdAt: now.add(Duration(minutes: 1)),
     text: 'Text4',
-    textUser: 'userA',
+    sender: 'userA',
   ),
   Chat(
-    created: now.add(Duration(days: 1, minutes: 5)),
+    createdAt: now.add(Duration(days: 1, minutes: 5)),
     text: 'Text5',
-    textUser: 'userB',
+    sender: 'userB',
   ),
   Chat(
-    created: now.add(Duration(days: 1, minutes: 6)),
+    createdAt: now.add(Duration(days: 1, minutes: 6)),
     text: 'Text6',
-    textUser: 'userA',
+    sender: 'userA',
   ),
   Chat(
-    created: now.add(Duration(days: 2, minutes: 6)),
+    createdAt: now.add(Duration(days: 2, minutes: 6)),
     text: 'Text7',
-    textUser: 'userA',
+    sender: 'userA',
   ),
   Chat(
-    created: now.add(Duration(days: 2, minutes: 10)),
+    createdAt: now.add(Duration(days: 2, minutes: 10)),
     text: 'Text8',
-    textUser: 'userA',
+    sender: 'userA',
   ),
   Chat(
-    created: now.add(Duration(days: 3, minutes: 90)),
+    createdAt: now.add(Duration(days: 3, minutes: 90)),
     text: 'Text9',
-    textUser: 'userB',
+    sender: 'userB',
   ),
   Chat(
-    created: now.add(Duration(days: 3, minutes: 90)),
+    createdAt: now.add(Duration(days: 3, minutes: 90)),
     text: 'Text10',
-    textUser: 'userA',
+    sender: 'userA',
   ),
   Chat(
-    created: now.add(Duration(days: 4, minutes: 100)),
+    createdAt: now.add(Duration(days: 4, minutes: 100)),
     text: 'Text11',
-    textUser: 'userB',
+    sender: 'userB',
   ),
 ];
