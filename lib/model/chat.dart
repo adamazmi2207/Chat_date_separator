@@ -1,7 +1,18 @@
+/// Chat data model class
 class Chat {
-  final DateTime created;
-  final String text;
-  final String textUser;
+  /// The date the chat message is created at / posted at
+  final DateTime createdAt;
 
-  Chat({required this.created, required this.text, required this.textUser});
+  /// The actual chat text message
+  final String text;
+
+  /// The sender of the chat message
+  final String sender;
+
+  /// Constructor
+  Chat({
+    required this.createdAt,
+    required this.text,
+    required this.sender,
+  });
 }
